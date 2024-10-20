@@ -16,10 +16,10 @@ const HomeComponent = () => {
   return (
     <section className="container m-auto my-4 select-none">
       <div className=" w-full h-full flex">
-        <div className="flex-1"></div>
+        <div className="flex-1 sm:hidden md:block"></div>
         <form
           action=""
-          className="border border-teal-500 p-2 rounded-md"
+          className=" sm:w-full md:w-fit border border-teal-500 p-2 rounded-md flex sm:flex-col md:flex-row"
           onSubmit={handleUpdate}
         >
           <label htmlFor="">Name : </label>
@@ -46,7 +46,7 @@ const HomeComponent = () => {
           </select>
           <button
             type="submit"
-            className="h-8 mx-4 px-3 border border-teal-500 rounded-md hover:bg-teal-500 hover:text-white"
+            className="h-8 my-1 px-3 border border-teal-500 rounded-md hover:bg-teal-500 hover:text-white"
           >
             Update
           </button>

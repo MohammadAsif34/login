@@ -14,10 +14,10 @@ const Navbar = () => {
   return (
     <section className="w-full h-20 bg-teal-600 select-none">
       <nav className="container h-full m-auto flex items-center text-white ">
-        <div className="w-24 h-full border border-black flex justify-center items-center">
+        <div className="w-24 h-full border border-black sm:flex-1  md:flex-grow-0 flex justify-center items-center">
           logo
         </div>
-        <div className="flex-1">
+        <div className="flex-1 sm:hidden lg:block">
           <ul className="mx-5 flex ">
             <li className=" px-6 py-2 hover:bg-white hover:text-teal-500 font-semibold capitalize rounded-md">
               item1

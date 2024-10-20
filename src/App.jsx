@@ -1,6 +1,11 @@
 import React from "react";
 import Com from "./pages/Com";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  Outlet,
+  RouterProvider,
+} from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import HomeComponent from "./pages/home-component/HomeComponent";
 
@@ -13,7 +18,7 @@ const App = () => {
       </>
     );
   };
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Layout />,
