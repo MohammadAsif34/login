@@ -14,12 +14,12 @@ const HomeComponent = () => {
   };
 
   return (
-    <section className="container m-auto my-4 select-none">
+    <section className="container m-auto my-4 px-4 select-none">
       <div className=" w-full h-full flex">
-        <div className="flex-1 sm:hidden md:block"></div>
+        <div className="lg:flex-1 "></div>
         <form
           action=""
-          className=" sm:w-full md:w-fit border border-teal-500 p-2 rounded-md flex sm:flex-col md:flex-row"
+          className="w-full lg:w-fit p-2 border border-teal-500 rounded-md flex flex-col lg:flex-row "
           onSubmit={handleUpdate}
         >
           <label htmlFor="">Name : </label>
@@ -27,7 +27,7 @@ const HomeComponent = () => {
             type="text"
             value={name}
             placeholder="Enter name"
-            className="h-8 mr-4 px-2 py-1 border border-teal-500 rounded-md"
+            className="h-8 lg:mr-4 px-2 py-1 border border-teal-500 rounded-md"
             onChange={(e) => setName(e.target.value)}
             required
           />
@@ -37,7 +37,7 @@ const HomeComponent = () => {
             id=""
             value={status}
             placeholder="Done or not"
-            className="h-8 mr-4 border border-teal-500 rounded-md bg-transparent px-2"
+            className="h-8 lg:mr-4 border border-teal-500 rounded-md bg-transparent px-2"
             onChange={(e) => setStatus(e.target.value)}
           >
             <option value="">Select</option>
@@ -46,9 +46,9 @@ const HomeComponent = () => {
           </select>
           <button
             type="submit"
-            className="h-8 my-1 px-3 border border-teal-500 rounded-md hover:bg-teal-500 hover:text-white"
+            className="h-8 my-2 lg:m-0 border border-teal-500 rounded-md bg-transparent px-2"
           >
-            Update
+            update
           </button>
         </form>
       </div>

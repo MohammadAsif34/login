@@ -14,10 +14,10 @@ const Navbar = () => {
   return (
     <section className="w-full h-20 bg-teal-600 select-none">
       <nav className="container h-full m-auto flex items-center text-white ">
-        <div className="w-24 h-full border border-black sm:flex-1  md:flex-grow-0 flex justify-center items-center">
+        <div className="w-24 h-full border border-black  flex justify-center items-center">
           logo
         </div>
-        <div className="flex-1 sm:hidden lg:block">
+        <div className="flex-1 hidden md:block">
           <ul className="mx-5 flex ">
             <li className=" px-6 py-2 hover:bg-white hover:text-teal-500 font-semibold capitalize rounded-md">
               item1
@@ -38,9 +38,9 @@ const Navbar = () => {
         </div>
 
         {isLogin ? (
-          <div className="flex  items-center relative">
-            <div className="mx-4 text-xl">
-              <span>mohamad asif</span>
+          <div className="flex-1 flex border items-center relative">
+            <div className="mx-4 text-xl flex-1 border">
+              <span className="lg:float-end">mohamad asif</span>
             </div>
             <div
               className=""
